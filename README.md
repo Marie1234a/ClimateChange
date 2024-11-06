@@ -1,3 +1,3 @@
 # klimawandel
-Uni Aufgabe: professionelle Webseiten für eine große Non-ProfitOrganisation, die sich mit dem Klimawandel beschäftigt. Um mehr Transparenz darüber zu schaffen, welche Unternehmen und Länder wie viel CO2 jährlich emittieren, soll eine öffentlich zugängliche Webseite ins Leben gerufen werden.
+Im Rahmen einer Universitätfallstudie soll eine professionelle Webseite für eine große Non-Profit-Organisation entwickelt werden, die sich dem Klimawandel widmet. Ziel der Webseite ist es, mehr Transparenz darüber zu schaffen, welche Unternehmen und Länder jährlich welche Mengen an CO₂ emittieren.
 
