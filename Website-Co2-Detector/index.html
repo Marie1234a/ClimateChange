@@ -1,0 +1,230 @@
+<!-- Home-Hauptseite-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>CO₂-Detector</title>
+  <!-- Bootstrap hinzufügen -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--Pfad zeigt auf die lokale bootstrap CSS Datei-->
+
+  <style>
+    /* CSS-Stile für die Schriftkulturen LTR und RTL*/
+    .ltr .navbar {
+      direction: ltr; /* Textfluss von links nach rechts */
+      }
+
+    .ltr .navbar-nav {
+      margin-left: auto; /* Verschiebt die Navigation nach rechts */
+      text-align: right; /* Textausrichtung nach rechts */
+      }
+    /* RTL-Anpassungen für Navbar */
+    .rtl .navbar {
+      direction: rtl; /* Textfluss von rechts nach links */
+      }
+
+    .rtl .navbar-nav {
+      margin-left: 0; /* Kein Abstand links */
+      margin-right: auto; /* Navigation nach links schieben */
+      text-align: left; /* Textausrichtung nach links */
+      }
+    /*Text styles*/
+    .position-absolute p {
+      font-size: 25px
+      }
+    .card-title {
+      font-size: 40px;
+      }
+    .card-text {
+      font-size: 20px;
+      }
+    .logo-header {
+      max-height: 40px; 
+      }
+    .logo-footer{
+      max-height: 80px;
+      }
+
+  /* Media Queries für mobile Geräte:*/
+  @media screen and (max-width: 767px) { /* Smartphone*/
+  /* Anpassungen für die Navbar und den Brand Namen */
+    .navbar-brand {
+      font-size: 20px; /* Kleinere Schriftgröße für Mobilgeräte */
+      }
+  /* Überschrift im Bild */
+    .position-absolute h1 {
+      font-size: 19px; /* Kleinere Schriftgröße für Handys */
+      }
+    .position-absolute p {
+      font-size: 12px; /* Kleinere Schriftgröße für Handys */
+      }
+  /* Cards */
+    .card-title {
+      font-size: 19px; /* Kleinere Schriftgröße für die Titel der Karten */
+      }
+    .card-text {
+      font-size: 12px; /* Kleinere Schriftgröße für den Text in den Karten */
+      }
+  /* Suchleiste anpassen */
+    .form-control {
+      width: 100%; /* Vollständige Breite der Suchleiste auf mobilen Geräten */
+      }
+    .logo-footer{
+      max-height: 30px;
+      }
+    .brand-footer{
+      font-size: 18px;
+      }
+    .footer-text{
+      font-size: 15px;
+      }
+  }
+  /*Tablet: text für cards auch kleiner machen, damit card Foto ganz angezeigt wird.*/
+  </style>
+</head>
+<body class="bg-dark"> <!--komplette Seite außer der Header wird dunkel Grau.-->
+  <!--Header:-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"> 
+        <img src="logo/image.png" alt="Logo" class="logo-header img-fluid rounded-circle">
+      </a>
+      <!--Brand-Name-->
+      <a class="navbar-brand" href="index.html">CO₂-Detector</a> 
+      <!--Hamburger Menü für kleine Bildschirme-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--inneres Menü: Globale Navigation-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="co2-footprint.html" >CO₂-Footprint</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a> 
+          </li>
+         <!--dropdown menü-->
+         <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="resources.html" >resources </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="FAQ.html">
+              FAQ</a></li>
+          </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--Content Bereich:-->
+<!--Überschrift über Hintergrundbild:-->
+  <div class="position-relative"> 
+    <img src="images/forest.webp" class="img-fluid" alt="" style="width: 100%; height: auto; margin: 0; padding: 0;">
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+      <h1>CO₂-Detector: Globale Emissionen im Überblick</h1>
+      <p>Informieren Sie sich und tragen Sie zu einer nachhaltigeren Zukunft bei.</p>
+    </div>
+  </div>
+
+<!--Card 1: Bilder mit Text daneben-->
+  <div class="card mt-4" style="background-color: #d3d3d3;">
+    <div class="row g-0"> 
+      <!-- Bild in der Spalte links-->
+      <div class="col-md-5"> <!-- Vergrößere diese Zahl, um das Bild größer zu machen -->
+        <img src="images/karte.webp" class="img-fluid rounded-start" alt="Bild" style="height: 100%; object-fit: cover;">
+      </div>
+      <!-- Text in der Spalte rechts -->
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title">Global CO₂ Footprint: Sharing Responsibility</h5>
+          <p class="card-text">Worldwide,<strong>CO₂ emissions</strong> are steadily <strong>rising</strong> despite increasing environmental initiatives. Industrial nations like the USA, China, and the EU contribute significantly to these strong emissions, influenced by <strong >energy-intensive sectors</strong> and a high standard of living. At the same time, large corporations play a central role. The world’s largest 100 companies are responsible for over 70% of emissions alone. Long-term reduction of CO₂ emissions can only be achieved through <strong>global collaboration</strong> between countries, companies, and consumers.</p>
+          <a href="co2-footprint.html" class="btn btn-primary">Overview of CO₂ Emissions</a> 
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <!--card 2-->
+  <div class="card mt-4" style="background-color: #d3d3d3;"> 
+    <div class="row g-0"> 
+      <!-- Text in der Spalte links -->
+      <div class="col-md-7"> 
+        <div class="card-body">
+          <h5 class="card-title">Becoming a Green Company</h5>
+          <p class="card-text">The path to becoming a green company involves the implementation of <strong>sustainable methods</strong> , the reduction of the CO₂ footprint, and the promotion of a <strong>sustainable corporate culture</strong>. We develop these methods and thereby facilitate your company's transition. By utilizing <strong>renewable energy</strong> ,<strong>reducing waste</strong>, and promoting the <strong>circular economy</strong>, companies can not only decrease their impact on the environment but also strengthen the <strong>trust and loyalty </strong> of their <strong>customers</strong>. Together, we can make a positive contribution to a more sustainable future.</p>
+          <a href="about-us.html" class="btn btn-primary">More about us</a>
+        </div>
+      </div>    
+      <!-- Bild in der Spalte rechts -->
+      <div class="col-md-5"> 
+        <img src="images/meeting.webp" class="img-fluid rounded-start" alt="Bild" style="height: 100%; object-fit: cover;">
+      </div>    
+    </div>
+  </div>
+
+  <!-- Footer:-->
+  <footer class="bg-body-tertiary py-4 mt-4"> 
+    <div class="footer-text container-fluid">
+      <div class="row">
+        <!-- Logo und Name -->
+        <div class="col-md-4 d-flex ">
+          <a href="index.html" class="navbar-brand">
+            <img src="logo/image.png" alt="Logo" class="logo-footer img-fluid rounded-circle" >
+          </a>
+          <a href="index.html" class="brand-footer navbar-brand">CO₂-Detector</a>
+        </div>
+        <!-- Rechtliche Links -->
+        <div class="col-md-4 text-center">
+          <ul class="list-unstyled">
+            <li><a class="text-decoration-none text-muted"><strong>HELP</strong></a></li>
+            <li><a href="impressum.html" class="text-decoration-none text-muted">Imprint</a></li>
+            <li><a href="datenschutz.html" class="text-decoration-none text-muted">Data protection</a></li>
+          </ul>
+        </div> 
+        <!-- Newsletter-Anmeldung -->
+        <div class="col-md-4">
+          <h5 class="footer-text text-center">Subscribe to our newsletter</h5>
+          <form class="d-flex flex-column align-items-center" action="newsletter-signup.html" method="post">
+            <input type="email" class="newsletter-input form-control mb-2" name="email" placeholder="Your email address" required>
+            <button type="submit" class="subscribe-button btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center mt-3">
+        <p class="text-muted mb-0">&copy; 2024 CO₂-Detector. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- JavaScript zur Erkennung der Schriftkultur -->
+  <script>
+    // Funktion zur Erkennung der Sprache und Setzen der entsprechenden Klasse
+    function setLanguageDirection() {
+      const userLang = navigator.language; 
+      // Überprüfen, ob die Sprache RTL ist (z.B. Arabisch oder Hebräisch)
+      if (userLang.startsWith('ar') || userLang.startsWith('he')) {
+          document.body.classList.add('rtl'); // Fügt die RTL-Klasse hinzu
+      } else {
+          document.body.classList.add('ltr'); // Fügt die LTR-Klasse hinzu
+      }
+    }
+    // Aufrufen der Funktion, wenn die Seite geladen wird
+    window.onload = setDirection;
+  </script>
+</body>
+</html>

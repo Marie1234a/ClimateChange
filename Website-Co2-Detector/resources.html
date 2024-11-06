@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO₂-Detector</title>
+  <!-- Hier fügen wir Bootstrap hinzu also auch alle styles und deren Klassen, wir müssen die nicht manuell hinzufügen -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--Pfad zeigt suf die lokale bootstrap CSS Datei-->
+  <style>
+    .logo-header {
+      max-height: 40px; /* maximale Höhe des Logos */
+      }
+    .resources{
+      color: white;
+      }
+    .logo-footer {
+      max-height: 40px;
+      }
+
+      
+  @media screen and (max-width: 767px) { /* Smartphone*/
+    .logo-footer{
+      max-height: 30px;
+      }
+    .brand-footer{
+      font-size: 18px;
+      }
+    .footer-text{
+      font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-dark"> <!--die komplette Seite außer der Header wird dunkel Grau-->
+  <!--Header:-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"> 
+        <img src="logo/image.png" alt="Logo" class="logo-header img-fluid rounded-circle"> <!--Logo-->
+      </a>
+      <!--Brand-Name-->
+      <a class="navbar-brand" href="index.html">CO₂-Detector</a> 
+      <!--Hamburger Menü für kleine Bildschirme-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--inneres Menü-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="co2-footprint.html" >CO₂-Footprint</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a> 
+          </li>
+         <!--dropdown menü-->
+         <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="resources.html" >resources </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="FAQ.html">
+              FAQ</a></li>
+          </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Resources content:-->
+  <div class="container my-5 resources">
+    <h2>Resources for Climate Change</h2>
+    <p>This page offers a collection of valuable resources to help you learn more about climate change, CO₂ emissions, and strategies to reduce your ecological footprint. We've gathered various organizations, reports, and tools for this purpose.</p>
+
+    <h3>Organizations/Initiatives</h3>
+    <ul>
+      <li>
+        <a href="https://www.ipcc.ch/">Intergovernmental Panel on Climate Change (IPCC)</a>
+        - A major source for scientific reports on climate change, created and reviewed by a wide range of scientists worldwide. They provide an in-depth analysis of current climate research and its societal impacts.
+      </li>
+      <li>
+        <a href="https://www.worldresourcesinstitute.org/">World Resources Institute</a>
+        - This organization provides data and analyses on natural resources and their management, with a particular focus on reducing CO₂ emissions and promoting sustainable practices.
+      </li>
+      <li>
+        <a href="https://www.climate.gov/">National Oceanic and Atmospheric Administration (NOAA)</a>
+        - NOAA offers comprehensive information on climate and weather research, including data on the effects of climate change on different regions.
+      </li>
+      <li>
+        <a href="https://www.greenpeace.org/">Greenpeace</a>
+        - A global environmental organization dedicated to environmental protection and combating climate change. They offer numerous campaigns, resources, and information on eco-friendly practices.
+      </li>
+    </ul>
+
+    <h3>Relevant Studies and Reports</h3>
+    <p>Here are some significant reports that can help you gain a better understanding of the impacts of climate change and necessary actions to combat it:</p>
+    <ul>
+      <li>
+        <a href="https://www.ipcc.ch/report/ar6/wg1/#FullReport">Climate Change 2021: The Physical Science Basis</a>
+        - The sixth IPCC assessment report provides a detailed analysis of scientific findings on climate change, its causes, and its impacts on the Earth.
+      </li>
+      <li>
+        <a href="https://www.unep.org/resources/global-environment-outlook">Global Environment Outlook</a>
+        - A report by the United Nations Environment Programme (UNEP) assessing environmental conditions worldwide and offering recommendations for sustainable development.
+      </li>
+    </ul>
+
+    <h3>Tools and Calculators</h3>
+    <p>With the following tools, you can calculate your own CO₂ footprint and understand how to reduce it:</p>
+    <ul>
+      <li>
+        <a href="https://www.carbonfootprint.com/calculator.aspx">Carbon Footprint Calculator</a>
+        - A simple tool to calculate your personal or business CO₂ footprint and get tips on how to reduce it.
+      </li>
+      <li>
+        <a href="https://www.epa.gov/carbon-footprint-calculator">EPA Carbon Footprint Calculator</a>
+        - A tool from the U.S. Environmental Protection Agency that helps you assess and reduce emissions from various aspects of your life.
+      </li>
+    </ul>
+
+    <h3>Tips for Reducing Your CO₂ Footprint</h3>
+    <p>In addition to the above information, there are several ways you can actively contribute to reducing CO₂ emissions:</p>
+    <ul>
+      <li>Use public transport or ride a bike for shorter distances.</li>
+      <li>Opt for renewable energy sources like solar energy for your home.</li>
+      <li>Reduce your meat consumption and favor plant-based foods.</li>
+      <li>Avoid single-use plastics and make sure to recycle properly.</li>
+      <li>Support businesses that follow sustainable practices and are transparent about their emissions.</li>
+    </ul>
+
+    <p>For more information, especially for businesses, subscribe to our newsletter. Together, we can make a difference and take a step closer to sustainability!</p>
+  </div>
+
+  <!-- Footer:-->
+  <footer class="bg-body-tertiary py-4 mt-4"> 
+    <div class="footer footer-text container-fluid">
+      <div class="row">
+        <!-- Logo und Name -->
+        <div class="col-md-4 d-flex ">
+          <a href="index.html" class="navbar-brand">
+            <img src="logo/image.png" alt="Logo" class="logo-footer img-fluid rounded-circle" >
+          </a>
+          <a href="index.html" class="brand-footer navbar-brand">CO₂-Detector</a>
+        </div>
+        <!-- Rechtliche Links -->
+        <div class="col-md-4 text-center">
+          <ul class="list-unstyled">
+            <li><a class="text-decoration-none text-muted"><strong>HELP</strong></a></li>
+            <li><a href="impressum.html" class="text-decoration-none text-muted">Imprint</a></li>
+            <li><a href="datenschutz.html" class="text-decoration-none text-muted">Data protection</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter-Anmeldung -->
+        <div class="col-md-4">
+          <h5 class="footer-text text-center">Subscribe to our newsletter</h5>
+          <form class="d-flex flex-column align-items-center" action="newsletter-signup.html" method="post">
+            <input type="email" class="newsletter-input form-control mb-2" name="email" placeholder="Your email address" required>
+            <button type="submit" class="subscribe-button btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center mt-3">
+        <p class="text-muted mb-0">&copy; 2024 CO₂-Detector. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
